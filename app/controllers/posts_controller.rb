@@ -1,8 +1,14 @@
 class PostsController < ApplicationController
+  
   def index
-  end
+
+    @posts = Post.orderid: :asc)
+
 
   def show
+
+    @post = Post.find(params[:id])
+
   end
 
   def new
@@ -14,7 +20,7 @@ class PostsController < ApplicationController
   def create
 
     post = Post.create!(post_params)
-    rederect_to post
+    redirect_to post
 
   end
 
@@ -24,7 +30,9 @@ class PostsController < ApplicationController
   def destroy
   end
 
+
   private
+  
   def post_params
     params.require(:post).permit(:title, :content)
   end
