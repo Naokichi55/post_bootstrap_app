@@ -1,0 +1,18 @@
+---
+ja:
+  activerecord:
+
+  models:
+    post: メッセージ
+    attributes:
+      post
+      attributes:
+        post: 
+          title: タイトル
+          content: 内容
+
+      errors: 
+        meessages:
+        #このファイルは削除する。
+
+      
