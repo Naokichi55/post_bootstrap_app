@@ -36,3 +36,10 @@ module PostBootstrapApp
     config.generators.system_tests = nil
   end
 end
+
+module CrudSampleApp
+  Class Application < Rails::Application
+
+  config.lord_defaults 6.0
+  config.i18n.defaults_locale = : ja
+  
